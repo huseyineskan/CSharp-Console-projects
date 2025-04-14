@@ -1,0 +1,30 @@
+D:\C#\projects\calculator-console-app\bin\Debug\net9.0\calculator-console-app.exe
+D:\C#\projects\calculator-console-app\bin\Debug\net9.0\calculator-console-app.deps.json
+D:\C#\projects\calculator-console-app\bin\Debug\net9.0\calculator-console-app.runtimeconfig.json
+D:\C#\projects\calculator-console-app\bin\Debug\net9.0\calculator-console-app.dll
+D:\C#\projects\calculator-console-app\bin\Debug\net9.0\calculator-console-app.pdb
+D:\C#\projects\calculator-console-app\obj\Debug\net9.0\calculator-console-app.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\projects\calculator-console-app\obj\Debug\net9.0\calculator-console-app.AssemblyInfoInputs.cache
+D:\C#\projects\calculator-console-app\obj\Debug\net9.0\calculator-console-app.AssemblyInfo.cs
+D:\C#\projects\calculator-console-app\obj\Debug\net9.0\calculator-console-app.csproj.CoreCompileInputs.cache
+D:\C#\projects\calculator-console-app\obj\Debug\net9.0\calculator-console-app.sourcelink.json
+D:\C#\projects\calculator-console-app\obj\Debug\net9.0\calculator-console-app.dll
+D:\C#\projects\calculator-console-app\obj\Debug\net9.0\refint\calculator-console-app.dll
+D:\C#\projects\calculator-console-app\obj\Debug\net9.0\calculator-console-app.pdb
+D:\C#\projects\calculator-console-app\obj\Debug\net9.0\calculator-console-app.genruntimeconfig.cache
+D:\C#\projects\calculator-console-app\obj\Debug\net9.0\ref\calculator-console-app.dll
+D:\C#\projects\calculator-console-app\Calculator 1\bin\Debug\net9.0\calculator-console-app.exe
+D:\C#\projects\calculator-console-app\Calculator 1\bin\Debug\net9.0\calculator-console-app.deps.json
+D:\C#\projects\calculator-console-app\Calculator 1\bin\Debug\net9.0\calculator-console-app.runtimeconfig.json
+D:\C#\projects\calculator-console-app\Calculator 1\bin\Debug\net9.0\calculator-console-app.dll
+D:\C#\projects\calculator-console-app\Calculator 1\bin\Debug\net9.0\calculator-console-app.pdb
+D:\C#\projects\calculator-console-app\Calculator 1\obj\Debug\net9.0\calculator-console-app.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\projects\calculator-console-app\Calculator 1\obj\Debug\net9.0\calculator-console-app.AssemblyInfoInputs.cache
+D:\C#\projects\calculator-console-app\Calculator 1\obj\Debug\net9.0\calculator-console-app.AssemblyInfo.cs
+D:\C#\projects\calculator-console-app\Calculator 1\obj\Debug\net9.0\calculator-console-app.csproj.CoreCompileInputs.cache
+D:\C#\projects\calculator-console-app\Calculator 1\obj\Debug\net9.0\calculator-console-app.sourcelink.json
+D:\C#\projects\calculator-console-app\Calculator 1\obj\Debug\net9.0\calculator-console-app.dll
+D:\C#\projects\calculator-console-app\Calculator 1\obj\Debug\net9.0\refint\calculator-console-app.dll
+D:\C#\projects\calculator-console-app\Calculator 1\obj\Debug\net9.0\calculator-console-app.pdb
+D:\C#\projects\calculator-console-app\Calculator 1\obj\Debug\net9.0\calculator-console-app.genruntimeconfig.cache
+D:\C#\projects\calculator-console-app\Calculator 1\obj\Debug\net9.0\ref\calculator-console-app.dll

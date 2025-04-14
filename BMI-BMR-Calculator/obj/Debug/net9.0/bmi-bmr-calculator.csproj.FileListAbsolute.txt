@@ -1,0 +1,15 @@
+D:\C#\projects\bmi-bmr-calculator\bin\Debug\net9.0\bmi-bmr-calculator.exe
+D:\C#\projects\bmi-bmr-calculator\bin\Debug\net9.0\bmi-bmr-calculator.deps.json
+D:\C#\projects\bmi-bmr-calculator\bin\Debug\net9.0\bmi-bmr-calculator.runtimeconfig.json
+D:\C#\projects\bmi-bmr-calculator\bin\Debug\net9.0\bmi-bmr-calculator.dll
+D:\C#\projects\bmi-bmr-calculator\bin\Debug\net9.0\bmi-bmr-calculator.pdb
+D:\C#\projects\bmi-bmr-calculator\obj\Debug\net9.0\bmi-bmr-calculator.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\projects\bmi-bmr-calculator\obj\Debug\net9.0\bmi-bmr-calculator.AssemblyInfoInputs.cache
+D:\C#\projects\bmi-bmr-calculator\obj\Debug\net9.0\bmi-bmr-calculator.AssemblyInfo.cs
+D:\C#\projects\bmi-bmr-calculator\obj\Debug\net9.0\bmi-bmr-calculator.csproj.CoreCompileInputs.cache
+D:\C#\projects\bmi-bmr-calculator\obj\Debug\net9.0\bmi-bmr-calculator.sourcelink.json
+D:\C#\projects\bmi-bmr-calculator\obj\Debug\net9.0\bmi-bmr-calculator.dll
+D:\C#\projects\bmi-bmr-calculator\obj\Debug\net9.0\refint\bmi-bmr-calculator.dll
+D:\C#\projects\bmi-bmr-calculator\obj\Debug\net9.0\bmi-bmr-calculator.pdb
+D:\C#\projects\bmi-bmr-calculator\obj\Debug\net9.0\bmi-bmr-calculator.genruntimeconfig.cache
+D:\C#\projects\bmi-bmr-calculator\obj\Debug\net9.0\ref\bmi-bmr-calculator.dll
