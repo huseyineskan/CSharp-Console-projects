@@ -25,6 +25,17 @@ FizzBuzz is a common programming problem often used in interviews. Here's how it
 
 ---
 
+## 📌 Features
+
+- ✅ Infinite loop until the user types `exit`
+- ✅ Handles invalid input gracefully
+- ✅ Tracks and displays a summary report:
+  - Total number of Fizz
+  - Total number of Buzz
+  - Total number of FizzBuzz
+
+---
+
 ## 💻 Example
 
 ```
@@ -51,14 +62,3 @@ Fizz: 1
 Buzz: 4
 FizzBuzz: 2
 ```
-
----
-
-## 📌 Features
-
-- ✅ Infinite loop until the user types `exit`
-- ✅ Handles invalid input gracefully
-- ✅ Tracks and displays a summary report:
-  - Total number of Fizz
-  - Total number of Buzz
-  - Total number of FizzBuzz

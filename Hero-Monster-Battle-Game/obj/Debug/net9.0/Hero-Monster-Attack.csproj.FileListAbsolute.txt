@@ -1,0 +1,15 @@
+D:\CSharp-projects\Hero-Monster-Attack\bin\Debug\net9.0\Hero-Monster-Attack.exe
+D:\CSharp-projects\Hero-Monster-Attack\bin\Debug\net9.0\Hero-Monster-Attack.deps.json
+D:\CSharp-projects\Hero-Monster-Attack\bin\Debug\net9.0\Hero-Monster-Attack.runtimeconfig.json
+D:\CSharp-projects\Hero-Monster-Attack\bin\Debug\net9.0\Hero-Monster-Attack.dll
+D:\CSharp-projects\Hero-Monster-Attack\bin\Debug\net9.0\Hero-Monster-Attack.pdb
+D:\CSharp-projects\Hero-Monster-Attack\obj\Debug\net9.0\Hero-Monster-Attack.GeneratedMSBuildEditorConfig.editorconfig
+D:\CSharp-projects\Hero-Monster-Attack\obj\Debug\net9.0\Hero-Monster-Attack.AssemblyInfoInputs.cache
+D:\CSharp-projects\Hero-Monster-Attack\obj\Debug\net9.0\Hero-Monster-Attack.AssemblyInfo.cs
+D:\CSharp-projects\Hero-Monster-Attack\obj\Debug\net9.0\Hero-Monster-Attack.csproj.CoreCompileInputs.cache
+D:\CSharp-projects\Hero-Monster-Attack\obj\Debug\net9.0\Hero-Monster-Attack.sourcelink.json
+D:\CSharp-projects\Hero-Monster-Attack\obj\Debug\net9.0\Hero-Monster-Attack.dll
+D:\CSharp-projects\Hero-Monster-Attack\obj\Debug\net9.0\refint\Hero-Monster-Attack.dll
+D:\CSharp-projects\Hero-Monster-Attack\obj\Debug\net9.0\Hero-Monster-Attack.pdb
+D:\CSharp-projects\Hero-Monster-Attack\obj\Debug\net9.0\Hero-Monster-Attack.genruntimeconfig.cache
+D:\CSharp-projects\Hero-Monster-Attack\obj\Debug\net9.0\ref\Hero-Monster-Attack.dll
