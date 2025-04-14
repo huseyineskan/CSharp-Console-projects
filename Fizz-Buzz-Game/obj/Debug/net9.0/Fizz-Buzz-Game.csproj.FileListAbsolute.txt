@@ -1,0 +1,15 @@
+D:\CSharp-projects\Fizz-Buzz-Game\obj\Debug\net9.0\Fizz-Buzz-Game.GeneratedMSBuildEditorConfig.editorconfig
+D:\CSharp-projects\Fizz-Buzz-Game\obj\Debug\net9.0\Fizz-Buzz-Game.AssemblyInfoInputs.cache
+D:\CSharp-projects\Fizz-Buzz-Game\obj\Debug\net9.0\Fizz-Buzz-Game.AssemblyInfo.cs
+D:\CSharp-projects\Fizz-Buzz-Game\obj\Debug\net9.0\Fizz-Buzz-Game.csproj.CoreCompileInputs.cache
+D:\CSharp-projects\Fizz-Buzz-Game\obj\Debug\net9.0\Fizz-Buzz-Game.sourcelink.json
+D:\CSharp-projects\Fizz-Buzz-Game\bin\Debug\net9.0\Fizz-Buzz-Game.exe
+D:\CSharp-projects\Fizz-Buzz-Game\bin\Debug\net9.0\Fizz-Buzz-Game.deps.json
+D:\CSharp-projects\Fizz-Buzz-Game\bin\Debug\net9.0\Fizz-Buzz-Game.runtimeconfig.json
+D:\CSharp-projects\Fizz-Buzz-Game\bin\Debug\net9.0\Fizz-Buzz-Game.dll
+D:\CSharp-projects\Fizz-Buzz-Game\bin\Debug\net9.0\Fizz-Buzz-Game.pdb
+D:\CSharp-projects\Fizz-Buzz-Game\obj\Debug\net9.0\Fizz-Buzz-Game.dll
+D:\CSharp-projects\Fizz-Buzz-Game\obj\Debug\net9.0\refint\Fizz-Buzz-Game.dll
+D:\CSharp-projects\Fizz-Buzz-Game\obj\Debug\net9.0\Fizz-Buzz-Game.pdb
+D:\CSharp-projects\Fizz-Buzz-Game\obj\Debug\net9.0\Fizz-Buzz-Game.genruntimeconfig.cache
+D:\CSharp-projects\Fizz-Buzz-Game\obj\Debug\net9.0\ref\Fizz-Buzz-Game.dll
