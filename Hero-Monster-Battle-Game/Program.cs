@@ -23,11 +23,7 @@ while (true)
         {
             Console.WriteLine("Hero and Monster cannot have the same name. Try again!");
         }
-        else
-        {
-            monsterName = monsterInput;
-            break;
-        }
+        monsterName = monsterInput;
     }
     break;
 }
@@ -36,8 +32,11 @@ while (true)
 {
     Console.Write("Health points: ");
     string healthInput = Console.ReadLine().Trim();
-    if (int.TryParse(healthInput, out int output)) healthPoint = output;
-    break;
+    if (int.TryParse(healthInput, out int output))
+    {
+        healthPoint = output;
+        break;
+    }
 }
 
 int heroHealth = healthPoint;
