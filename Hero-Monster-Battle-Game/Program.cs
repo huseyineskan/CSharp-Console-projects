@@ -9,15 +9,8 @@ while (true)
 {
     Console.Write("Your name: ");
     string heroInput = Console.ReadLine().Trim();
-    if (heroInput.Length != 0)
-    {
-        heroName = heroInput;
-        break;
-    }
-    else
-    {
-        break;
-    }
+    if (heroInput.Length != 0) heroName = heroInput;
+    break;
 }
 
 while (true)
@@ -36,25 +29,15 @@ while (true)
             break;
         }
     }
-    else
-    {
-        break;
-    }
+    break;
 }
 
 while (true)
 {
     Console.Write("Health points: ");
     string healthInput = Console.ReadLine().Trim();
-    if (int.TryParse(healthInput, out int output))
-    {
-        healthPoint = output;
-        break;
-    }
-    else
-    {
-        break;
-    }
+    if (int.TryParse(healthInput, out int output)) healthPoint = output;
+    break;
 }
 
 int heroHealth = healthPoint;

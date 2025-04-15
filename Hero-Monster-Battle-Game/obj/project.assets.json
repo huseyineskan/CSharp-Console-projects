@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CSharp-projects\\Hero-Monster-Attack\\Hero-Monster-Attack.csproj",
-      "projectName": "Hero-Monster-Attack",
-      "projectPath": "D:\\CSharp-projects\\Hero-Monster-Attack\\Hero-Monster-Attack.csproj",
+      "projectUniqueName": "D:\\CSharp-projects\\Hero-Monster-Battle-Game\\Hero-Monster-Battle-Game.csproj",
+      "projectName": "Hero-Monster-Battle-Game",
+      "projectPath": "D:\\CSharp-projects\\Hero-Monster-Battle-Game\\Hero-Monster-Battle-Game.csproj",
       "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-      "outputPath": "D:\\CSharp-projects\\Hero-Monster-Attack\\obj\\",
+      "outputPath": "D:\\CSharp-projects\\Hero-Monster-Battle-Game\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

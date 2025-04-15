@@ -1,0 +1,15 @@
+D:\CSharp-projects\Hero-Monster-Battle-Game\bin\Debug\net9.0\Hero-Monster-Battle-Game.exe
+D:\CSharp-projects\Hero-Monster-Battle-Game\bin\Debug\net9.0\Hero-Monster-Battle-Game.deps.json
+D:\CSharp-projects\Hero-Monster-Battle-Game\bin\Debug\net9.0\Hero-Monster-Battle-Game.runtimeconfig.json
+D:\CSharp-projects\Hero-Monster-Battle-Game\bin\Debug\net9.0\Hero-Monster-Battle-Game.dll
+D:\CSharp-projects\Hero-Monster-Battle-Game\bin\Debug\net9.0\Hero-Monster-Battle-Game.pdb
+D:\CSharp-projects\Hero-Monster-Battle-Game\obj\Debug\net9.0\Hero-Monster-Battle-Game.GeneratedMSBuildEditorConfig.editorconfig
+D:\CSharp-projects\Hero-Monster-Battle-Game\obj\Debug\net9.0\Hero-Monster-Battle-Game.AssemblyInfoInputs.cache
+D:\CSharp-projects\Hero-Monster-Battle-Game\obj\Debug\net9.0\Hero-Monster-Battle-Game.AssemblyInfo.cs
+D:\CSharp-projects\Hero-Monster-Battle-Game\obj\Debug\net9.0\Hero-Monster-Battle-Game.csproj.CoreCompileInputs.cache
+D:\CSharp-projects\Hero-Monster-Battle-Game\obj\Debug\net9.0\Hero-Monster-Battle-Game.sourcelink.json
+D:\CSharp-projects\Hero-Monster-Battle-Game\obj\Debug\net9.0\Hero-Monster-Battle-Game.dll
+D:\CSharp-projects\Hero-Monster-Battle-Game\obj\Debug\net9.0\refint\Hero-Monster-Battle-Game.dll
+D:\CSharp-projects\Hero-Monster-Battle-Game\obj\Debug\net9.0\Hero-Monster-Battle-Game.pdb
+D:\CSharp-projects\Hero-Monster-Battle-Game\obj\Debug\net9.0\Hero-Monster-Battle-Game.genruntimeconfig.cache
+D:\CSharp-projects\Hero-Monster-Battle-Game\obj\Debug\net9.0\ref\Hero-Monster-Battle-Game.dll
