@@ -32,11 +32,11 @@ while (true)
 {
     Console.Write("Health points: ");
     string healthInput = Console.ReadLine().Trim();
-    if (int.TryParse(healthInput, out int output))
+    if (healthInput.Length != 0)
     {
-        healthPoint = output;
-        break;
+        if (int.TryParse(healthInput, out int output)) healthPoint = output;
     }
+    break;
 }
 
 int heroHealth = healthPoint;
@@ -64,8 +64,7 @@ while (heroHealth > 0 && monsterHealth > 0)
         counter++;
     }
 
-    if (heroHealth <= 0) result = monsterName;
-    if (monsterHealth <= 0) result = heroName;
+    result = heroHealth <= 0 ? monsterName : heroName;
 
 }
 
