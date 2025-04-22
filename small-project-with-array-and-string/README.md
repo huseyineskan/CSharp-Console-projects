@@ -13,19 +13,22 @@ In this project, I implemented an example of how to loop over strings in an arra
 
 ## 🔁 Functions used
 
-- ✅ foreach()
-- ✅ while()
-- ✅ Remove()
-- ✅ Substring()
-- ✅ Trim() and TrimStart()
-- ✅ IndexOf()
+- foreach()
+- while()
+- Remove()
+- Substring()
+- Trim() and TrimStart()
+- IndexOf()
 
 ---
 
 ## 📁 Sample Example
 
 ```
-string[] myStrings = new string[2] { "I like pizza. I like roast chicken. I like salad", "I like all tree of the menu choices" };
+string[] myStrings = new string[2] {
+    "I like pizza. I like roast chicken. I like salad",
+    "I like all tree of the menu choices"
+    };
 ```
 
 Output:
