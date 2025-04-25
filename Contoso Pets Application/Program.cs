@@ -6,14 +6,10 @@
         {
 
             string[] menuTexts = {
-                "List all of our current pet information.",
-                "Assign values to the ourAnimals array fields.",
-                "Ensure animal ages and physical descriptions are complete.",
-                "Ensure animal nicknames and personality descriptions are complete.",
-                "Edit an animal’s age.",
-                "Edit an animal’s personality description.",
-                "Display all cats with a specified characteristic.",
-                "Display all dogs with a specified characteristic.",
+                "1. Add a new pet.",
+                "2. List of all pets.",
+                "3. Edit pet information.",
+                "4. Delete pet."
             };
 
             List<Pets> ourAnimals = new List<Pets>{
@@ -34,39 +30,106 @@
                     petPersonalityDescription = "loves to have her belly rubbed and likes to chase her tail. gives lots of kisses."
                 }
             };
-            Console.WriteLine($"Welcome to Contoso Pets Application.\n");
+            Console.WriteLine($"Welcome to Contoso Pets Application.");
 
-            Console.WriteLine("-------------- MAIN MENU --------------");
-            for (int i = 0; i < menuTexts.Length; i++)
+            while (true)
             {
-                Console.WriteLine($"{i + 1}. {menuTexts[i]}");
-            }
-            Console.WriteLine("");
-            Console.Write("Select a menu: ");
-            string menu = Console.ReadLine();
+                string? menu;
+                Console.WriteLine("\n-------------- MAIN MENU --------------");
+                foreach (var item in menuTexts)
+                {
+                    Console.WriteLine(item);
+                }
+                Console.WriteLine("");
+                do
+                {
+                    Console.Write("Select a menu: ");
+                    menu = Console.ReadLine();
+                } while (string.IsNullOrWhiteSpace(menu));
+                Console.WriteLine("");
 
-            switch (menu.ToLower())
-            {
-                case "exit":
-                    break;
-                case "1":
-                    Console.WriteLine("1. List all of our current pet information.\n");
-                    Console.WriteLine($"#ID\tTYPE\tAGE\tNICKNAME");
+                switch (menu.ToLower())
+                {
+                    case "exit":
+                        break;
+                    case "1":
+                        string? petSpeciesInput, petNicknameInput, petPhysicalConditionDescriptionInput, petPersonalityDescriptionInput, petAgeInput;
+                        int petAgeNumber;
 
-                    for (int i = 0; i < ourAnimals.Count; i++)
-                    {
-                        Console.WriteLine($"{i + 1}\t{ourAnimals[i].petSpecies}\t{ourAnimals[i].petAge}\t{ourAnimals[i].petNickname}");
-                    }
-                    Console.WriteLine("");
-                    Console.Write("<- Back ");
-                    Console.Read();
-                    break;
-                case "2":
-                    Console.WriteLine("You selected 2.List of available pets.");
-                    Console.WriteLine(Console.ReadLine());
-                    break;
-                default:
-                    break;
+                        do
+                        {
+                            Console.Write("Pet Species (cat, dog etc.): ");
+                            petSpeciesInput = Console.ReadLine();
+                        } while (string.IsNullOrWhiteSpace(petSpeciesInput));
+
+                        do
+                        {
+                            Console.Write("Pet Nickname: ");
+                            petNicknameInput = Console.ReadLine();
+                        } while (string.IsNullOrWhiteSpace(petNicknameInput));
+
+                        do
+                        {
+                            Console.Write("Pet Age: ");
+                            petAgeInput = Console.ReadLine();
+                            petAgeNumber = int.Parse(petAgeInput);
+                        } while (string.IsNullOrWhiteSpace(petAgeInput));
+
+                        do
+                        {
+                            Console.Write("Pet Physical Condition Description: ");
+                            petPhysicalConditionDescriptionInput = Console.ReadLine();
+                        } while (string.IsNullOrWhiteSpace(petPhysicalConditionDescriptionInput));
+
+                        do
+                        {
+                            Console.Write("Pet Personality Description: ");
+                            petPersonalityDescriptionInput = Console.ReadLine();
+                        } while (string.IsNullOrWhiteSpace(petPersonalityDescriptionInput));
+
+                        int newPetId = (ourAnimals.Count > 0) ? ourAnimals[ourAnimals.Count - 1].petId + 1 : 1;
+
+                        ourAnimals.Add(new Pets
+                        {
+                            petId = newPetId,
+                            petSpecies = petSpeciesInput,
+                            petNickname = petNicknameInput,
+                            petAge = petAgeNumber,
+                            petPhysicalConditionDescription = petPhysicalConditionDescriptionInput,
+                            petPersonalityDescription = petPersonalityDescriptionInput
+                        });
+
+                        Console.WriteLine();
+                        string petAddMessage = "- Could not add pet. Please try again.";
+
+                        for (int i = 0; i < ourAnimals.Count; i++)
+                        {
+                            if (ourAnimals[i].petId == newPetId)
+                            {
+                                petAddMessage = ($"+ Pet '{petNicknameInput}' added successfully.");
+                            }
+                        }
+                        Console.WriteLine(petAddMessage);
+                        break;
+                    case "2":
+                        // Console.WriteLine($"You selected: {menuTexts[1]}");
+                        Console.WriteLine($"#ID\tTYPE\tAGE\tNICKNAME");
+
+                        for (int i = 0; i < ourAnimals.Count; i++)
+                        {
+                            Console.WriteLine($"{i + 1}\t{ourAnimals[i].petSpecies}\t{ourAnimals[i].petAge}\t{ourAnimals[i].petNickname}");
+                        }
+                        Console.WriteLine("");
+                        Console.Write("<- Back ");
+                        Console.Read();
+                        break;
+                    case "3":
+                        Console.WriteLine("You selected 2.List of available pets.");
+                        Console.WriteLine(Console.ReadLine());
+                        break;
+                    default:
+                        break;
+                }
             }
         }
     }
@@ -79,6 +142,8 @@
         public int petAge { get; set; }
         public string petPhysicalConditionDescription { get; set; }
         public string petPersonalityDescription { get; set; }
+
+
     }
 
 }
