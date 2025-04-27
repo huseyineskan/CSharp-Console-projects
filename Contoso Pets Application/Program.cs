@@ -31,8 +31,8 @@
                 }
             };
             Console.WriteLine($"Welcome to Contoso Pets Application.");
-
-            while (true)
+            bool condition = true;
+            while (condition)
             {
                 string? menu;
                 Console.WriteLine("\n-------------- MAIN MENU --------------");
@@ -40,17 +40,18 @@
                 {
                     Console.WriteLine(item);
                 }
-                Console.WriteLine("");
+                Console.WriteLine();
                 do
                 {
                     Console.Write("Select a menu: ");
                     menu = Console.ReadLine();
                 } while (string.IsNullOrWhiteSpace(menu));
-                Console.WriteLine("");
+                Console.WriteLine();
 
                 switch (menu.ToLower())
                 {
                     case "exit":
+                        condition = false;
                         break;
                     case "1":
                         string? petSpeciesInput, petNicknameInput, petPhysicalConditionDescriptionInput, petPersonalityDescriptionInput, petAgeInput;
@@ -112,24 +113,52 @@
                         Console.WriteLine(petAddMessage);
                         break;
                     case "2":
-                        // Console.WriteLine($"You selected: {menuTexts[1]}");
-                        Console.WriteLine($"#ID\tTYPE\tAGE\tNICKNAME");
-
-                        for (int i = 0; i < ourAnimals.Count; i++)
-                        {
-                            Console.WriteLine($"{i + 1}\t{ourAnimals[i].petSpecies}\t{ourAnimals[i].petAge}\t{ourAnimals[i].petNickname}");
-                        }
-                        Console.WriteLine("");
+                        ReturnAllAnimals();
                         Console.Write("<- Back ");
                         Console.Read();
                         break;
                     case "3":
-                        Console.WriteLine("You selected 2.List of available pets.");
+                        Console.Write("Edit pet menu.");
                         Console.WriteLine(Console.ReadLine());
+                        break;
+                    case "4":
+                        ReturnAllAnimals();
+                        string deleteIdInput;
+                        bool result;
+
+                        do
+                        {
+                            int i = 0;
+                            Console.Write("Which pet (ID) do you want to delete?: ");
+                            deleteIdInput = Console.ReadLine();
+                            result = int.TryParse(deleteIdInput, out i);
+                        } while (!result);
+
+                        int isDeteled = ourAnimals.RemoveAll(p => p.petId == Convert.ToInt32(deleteIdInput));
+
+                        if (isDeteled != 0)
+                        {
+                            Console.WriteLine($"The pet {deleteIdInput} was deleted.");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"The pet {deleteIdInput} wasn't deleted.");
+                        }
                         break;
                     default:
                         break;
                 }
+            }
+
+            void ReturnAllAnimals()
+            {
+                Console.WriteLine($"#ID\tTYPE\tAGE\tNICKNAME");
+
+                for (int i = 0; i < ourAnimals.Count; i++)
+                {
+                    Console.WriteLine($"{i + 1}\t{ourAnimals[i].petSpecies}\t{ourAnimals[i].petAge}\t{ourAnimals[i].petNickname}");
+                }
+                Console.WriteLine();
             }
         }
     }
