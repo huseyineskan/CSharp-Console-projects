@@ -1,16 +1,14 @@
 # 🐈 Contoso Pets Application
 
-## 📋 Description
+Contoso Pets Application is a simple C# console program that allows users to manage a list of pets. Users can add, list, edit, and delete pets. The application is built for learning and basic CRUD (Create, Read, Update, Delete) operations demonstration.
 
-Contoso Pets Application is a simple console-based C# project that allows users to:
+## 📋 Features
 
 - Add a new pet
 - List all pets
 - Edit a pet's information
 - Delete a pet
 - Exit
-
-The project uses basic C# concepts like `List<T>`, `FirstOrDefault()`, `while` loops, and simple input validation.
 
 ## ⚙ Technologies Used
 
@@ -27,6 +25,7 @@ The project uses basic C# concepts like `List<T>`, `FirstOrDefault()`, `while` l
 
 ## Usage
 
+The project uses basic C# concepts like `List<T>`, `FirstOrDefault()`, `while` loops, and simple input validation.
 After running the application, you will see the main menu:
 
 ```
