@@ -9,7 +9,8 @@
                 "1. Add a new pet.",
                 "2. List of all pets.",
                 "3. Edit pet information.",
-                "4. Delete pet."
+                "4. Delete pet.",
+                "Exit"
             };
 
             List<Pets> ourAnimals = new List<Pets>{
@@ -18,16 +19,16 @@
                     petSpecies = "dog",
                     petNickname = "Buddy",
                     petAge = 2,
-                    petPhysicalConditionDescription = "medium sized cream colored female golden retriever weighing about 65 pounds. housebroken.",
-                    petPersonalityDescription = "loves to have her belly rubbed and likes to chase her tail. gives lots of kisses."
+                    petPhysicalConditionDescription = "medium sized cream colored",
+                    petPersonalityDescription = "loves to have her belly rubbed and likes to chase her tail."
                 },
                 new Pets{
                     petId= 2,
                     petSpecies = "cat",
                     petNickname = "Pussi",
                     petAge = 4,
-                    petPhysicalConditionDescription = "medium sized cream colored female golden retriever weighing about 65 pounds. housebroken.",
-                    petPersonalityDescription = "loves to have her belly rubbed and likes to chase her tail. gives lots of kisses."
+                    petPhysicalConditionDescription = "little boy",
+                    petPersonalityDescription = "gives lots of kisses."
                 }
             };
             Console.WriteLine($"Welcome to Contoso Pets Application.");
@@ -118,7 +119,59 @@
                         Console.Read();
                         break;
                     case "3":
-                        Console.Write("Edit pet menu.");
+                        ReturnAllAnimals();
+                        string updateIdInput;
+                        bool isNumber;
+                        do
+                        {
+                            Console.Write("Which pet (ID) do you want to update?: ");
+                            updateIdInput = Console.ReadLine();
+                            isNumber = isNumberMethod(updateIdInput);
+
+                        } while (!isNumber);
+
+                        var petToEdit = ourAnimals.FirstOrDefault(p => p.petId == Convert.ToInt32(updateIdInput));
+
+                        if (petToEdit != null)
+                        {
+                            Console.Write($"Pet Species ({petToEdit.petSpecies}): ");
+                            string newPetSpecies = Console.ReadLine();
+
+                            Console.Write($"Pet Nickname({petToEdit.petNickname}): ");
+                            string newPetName = Console.ReadLine();
+
+                            Console.Write($"Pet Age({petToEdit.petAge}): ");
+                            string newPetAge = Console.ReadLine();
+                            bool isNumberAge = isNumberMethod(newPetAge);
+
+                            Console.Write($"Pet Physical Condition Description({petToEdit.petPhysicalConditionDescription}): ");
+                            string newPetPhysicalCondition = Console.ReadLine();
+
+                            Console.Write($"Pet Personality Description({petToEdit.petPersonalityDescription}): ");
+                            string newPetPersonalityDescription = Console.ReadLine();
+
+                            if (!string.IsNullOrEmpty(newPetSpecies) || !string.IsNullOrEmpty(newPetName) || !string.IsNullOrEmpty(newPetAge) || !string.IsNullOrEmpty(newPetPhysicalCondition) || !string.IsNullOrEmpty(newPetPersonalityDescription))
+                            {
+                                petToEdit.petSpecies = newPetSpecies;
+                                petToEdit.petNickname = newPetName;
+                                petToEdit.petPhysicalConditionDescription = newPetPhysicalCondition;
+                                petToEdit.petPersonalityDescription = newPetPersonalityDescription;
+
+                                if (isNumberAge)
+                                {
+                                    petToEdit.petAge = Convert.ToInt32(newPetAge);
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("Boş bıraktı");
+                            }
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine("No pet found!");
+                        }
                         Console.WriteLine(Console.ReadLine());
                         break;
                     case "4":
@@ -152,13 +205,20 @@
 
             void ReturnAllAnimals()
             {
-                Console.WriteLine($"#ID\tTYPE\tAGE\tNICKNAME");
+                Console.WriteLine($"#ID\tTYPE\tAGE\tNICKNAME\tPHYSICAL CONDITION");
 
                 for (int i = 0; i < ourAnimals.Count; i++)
                 {
-                    Console.WriteLine($"{i + 1}\t{ourAnimals[i].petSpecies}\t{ourAnimals[i].petAge}\t{ourAnimals[i].petNickname}");
+                    Console.WriteLine($"{ourAnimals[i].petId}\t{ourAnimals[i].petSpecies}\t{ourAnimals[i].petAge}\t{ourAnimals[i].petNickname}\t\t{ourAnimals[i].petPhysicalConditionDescription}");
                 }
                 Console.WriteLine();
+            }
+
+            bool isNumberMethod(string input)
+            {
+                int i = 0;
+                bool isNumber = int.TryParse(input, out i);
+                return isNumber;
             }
         }
     }
