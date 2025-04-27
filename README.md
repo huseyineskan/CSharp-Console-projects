@@ -9,7 +9,7 @@ Projects I have completed on my journey to understand the basics of C#.
 - 🎓 [Grade Statistics Program](https://github.com/huseyineskan/CSharp-projects/tree/main/Grade-Statistics-Program)
 - 🎮 [Fizz Buzz Console Game](https://github.com/huseyineskan/CSharp-projects/tree/main/Fizz-Buzz-Game)
 - ⚔️ [Hero vs Monster - Console Battle Game](https://github.com/huseyineskan/CSharp-projects/tree/main/Hero-Monster-Battle-Game)
-- ⚔️ [Contoso Pets Application](https://github.com/huseyineskan/CSharp-projects/tree/main/Contoso-Pets-Application)
+- 🐈 [Contoso Pets Application](https://github.com/huseyineskan/CSharp-projects/tree/main/Contoso%20Pets%20Application)
 
 ## 🚀 Getting Started
 

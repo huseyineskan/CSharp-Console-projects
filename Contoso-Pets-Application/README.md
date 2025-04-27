@@ -1,4 +1,4 @@
-# Contoso Pets Application
+# 🐈 Contoso Pets Application
 
 ## 📋 Description
 
@@ -48,6 +48,7 @@ Select a menu item by typing its number (e.g., `1` to add a new pet) or type `ex
 
 ```
 Select a menu: 1
+
 Pet Species (cat, dog etc.): Dog
 Pet Nickname: Max
 Pet Age: 3
@@ -60,7 +61,6 @@ Output:
 
 ```
 + Pet 'Max' added successfully.
-
 ```
 
 #### Listing All Pets
@@ -93,6 +93,7 @@ If you leave the input blank, the current value will be valid.
 
 ```
 Select a menu: 4
+
 Which pet (ID) do you want to delete?: 2
 The pet 2 was deleted.
 ```
