@@ -182,7 +182,7 @@
                         do
                         {
                             int i = 0;
-                            Console.Write("Which pet (ID) do you want to delete?: ");
+                            Console.Write("Which pet (ID) do you want to delete? (0:exit): ");
                             deleteIdInput = Console.ReadLine();
                             result = int.TryParse(deleteIdInput, out i);
                         } while (!result);
@@ -193,7 +193,7 @@
                         {
                             Console.WriteLine($"The pet {deleteIdInput} was deleted.");
                         }
-                        else
+                        else if (deleteIdInput != "0")
                         {
                             Console.WriteLine($"The pet {deleteIdInput} wasn't deleted.");
                         }

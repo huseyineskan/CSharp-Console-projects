@@ -13,3 +13,18 @@ D:\CSharp-projects\Contoso Pets Application\obj\Debug\net9.0\refint\Contoso Pets
 D:\CSharp-projects\Contoso Pets Application\obj\Debug\net9.0\Contoso Pets Application.pdb
 D:\CSharp-projects\Contoso Pets Application\obj\Debug\net9.0\Contoso Pets Application.genruntimeconfig.cache
 D:\CSharp-projects\Contoso Pets Application\obj\Debug\net9.0\ref\Contoso Pets Application.dll
+D:\CSharp-projects\Contoso-Pets-Application\bin\Debug\net9.0\Contoso Pets Application.exe
+D:\CSharp-projects\Contoso-Pets-Application\bin\Debug\net9.0\Contoso Pets Application.deps.json
+D:\CSharp-projects\Contoso-Pets-Application\bin\Debug\net9.0\Contoso Pets Application.runtimeconfig.json
+D:\CSharp-projects\Contoso-Pets-Application\bin\Debug\net9.0\Contoso Pets Application.dll
+D:\CSharp-projects\Contoso-Pets-Application\bin\Debug\net9.0\Contoso Pets Application.pdb
+D:\CSharp-projects\Contoso-Pets-Application\obj\Debug\net9.0\Contoso Pets Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\CSharp-projects\Contoso-Pets-Application\obj\Debug\net9.0\Contoso Pets Application.AssemblyInfoInputs.cache
+D:\CSharp-projects\Contoso-Pets-Application\obj\Debug\net9.0\Contoso Pets Application.AssemblyInfo.cs
+D:\CSharp-projects\Contoso-Pets-Application\obj\Debug\net9.0\Contoso Pets Application.csproj.CoreCompileInputs.cache
+D:\CSharp-projects\Contoso-Pets-Application\obj\Debug\net9.0\Contoso Pets Application.sourcelink.json
+D:\CSharp-projects\Contoso-Pets-Application\obj\Debug\net9.0\Contoso Pets Application.dll
+D:\CSharp-projects\Contoso-Pets-Application\obj\Debug\net9.0\refint\Contoso Pets Application.dll
+D:\CSharp-projects\Contoso-Pets-Application\obj\Debug\net9.0\Contoso Pets Application.pdb
+D:\CSharp-projects\Contoso-Pets-Application\obj\Debug\net9.0\Contoso Pets Application.genruntimeconfig.cache
+D:\CSharp-projects\Contoso-Pets-Application\obj\Debug\net9.0\ref\Contoso Pets Application.dll
