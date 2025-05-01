@@ -5,7 +5,7 @@ Contoso Pets Application is a simple C# console program that allows users to man
 ## 📋 Features
 
 - Add a new pet
-- List all pets
+- List all pets (You can go to the pet detail page from the menu.)
 - Edit a pet's information
 - Delete a pet
 - Exit
@@ -105,8 +105,6 @@ The pet 2 was deleted.
 
 ## Known Missing Features / Future Improvements
 
-- **Input Validation Improvements:**
-  - Currently no exception handling if user enters invalid data (e.g., non-numeric age).
 - **Search Functionality:**
   - Ability to search pets by name, type, or age.
 - **Persistence:**

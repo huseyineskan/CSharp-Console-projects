@@ -20,7 +20,9 @@
                     petNickname = "Buddy",
                     petAge = 2,
                     petPhysicalConditionDescription = "medium sized cream colored",
-                    petPersonalityDescription = "loves to have her belly rubbed and likes to chase her tail."
+                    petPersonalityDescription = "loves to have her belly rubbed and likes to chase her tail.",
+                    // petAdoptionSituation = true,
+                    // petMedicalHistory = "there isn't information",
                 },
                 new Pets{
                     petId= 2,
@@ -28,7 +30,10 @@
                     petNickname = "Pussi",
                     petAge = 4,
                     petPhysicalConditionDescription = "little boy",
-                    petPersonalityDescription = "gives lots of kisses."
+                    petPersonalityDescription = "gives lots of kisses.",
+                    // petAdoptionSituation = false,
+                    // petMedicalHistory = "Her right hind leg was broken in 2020",
+
                 }
             };
             Console.WriteLine($"Welcome to Contoso Pets Application.");
@@ -115,7 +120,30 @@
                         break;
                     case "2":
                         ReturnAllAnimals();
-                        Console.Write("<- Back ");
+                        string petDetailInput;
+                        bool petDetailIsNumber;
+                        do
+                        {
+                            Console.Write("Pet details (ID): ");
+                            petDetailInput = Console.ReadLine();
+                            petDetailIsNumber = isNumberMethod(petDetailInput);
+
+                        } while (!petDetailIsNumber);
+
+                        Console.WriteLine("\n**************** PET DETAILS ****************\n");
+                        bool isTherePet = false;
+                        foreach (var pet in ourAnimals)
+                        {
+                            if (pet.petId == Convert.ToInt32(petDetailInput))
+                            {
+                                Console.WriteLine($"Pet ID: {pet.petId}\nPet Species: {pet.petSpecies}\nPet Nickname: {pet.petNickname}\nPet Physical Condition Description: {pet.petPhysicalConditionDescription}\nPet Personality Description: {pet.petPersonalityDescription}");
+                                isTherePet = true;
+                                // \nPet Adoption: {pet.petAdoptionSituation}\nPet Medical History: {pet.petMedicalHistory}
+                            }
+                        }
+                        if (!isTherePet) Console.WriteLine("No pet found!");
+                        Console.WriteLine("\n**********************************************");
+                        Console.Write("<- Back");
                         Console.Read();
                         break;
                     case "3":
@@ -149,6 +177,7 @@
 
                             Console.Write($"Pet Personality Description({petToEdit.petPersonalityDescription}): ");
                             string newPetPersonalityDescription = Console.ReadLine();
+
 
                             if (!string.IsNullOrEmpty(newPetSpecies) || !string.IsNullOrEmpty(newPetName) || !string.IsNullOrEmpty(newPetAge) || !string.IsNullOrEmpty(newPetPhysicalCondition) || !string.IsNullOrEmpty(newPetPersonalityDescription))
                             {
@@ -231,7 +260,8 @@
         public int petAge { get; set; }
         public string petPhysicalConditionDescription { get; set; }
         public string petPersonalityDescription { get; set; }
-
+        // public bool petAdoptionSituation { get; set; }
+        // public string petMedicalHistory { get; set; }
 
     }
 
