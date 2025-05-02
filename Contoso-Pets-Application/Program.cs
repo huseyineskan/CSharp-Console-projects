@@ -21,8 +21,8 @@
                     petAge = 2,
                     petPhysicalConditionDescription = "medium sized cream colored",
                     petPersonalityDescription = "loves to have her belly rubbed and likes to chase her tail.",
-                    // petAdoptionSituation = true,
-                    // petMedicalHistory = "there isn't information",
+                    petAdoptionSituation = "yes",
+                    petMedicalHistory = "there isn't information",
                 },
                 new Pets{
                     petId= 2,
@@ -31,8 +31,8 @@
                     petAge = 4,
                     petPhysicalConditionDescription = "little boy",
                     petPersonalityDescription = "gives lots of kisses.",
-                    // petAdoptionSituation = false,
-                    // petMedicalHistory = "Her right hind leg was broken in 2020",
+                    petAdoptionSituation = "no",
+                    petMedicalHistory = "Her right hind leg was broken in 2020",
 
                 }
             };
@@ -60,7 +60,7 @@
                         condition = false;
                         break;
                     case "1":
-                        string? petSpeciesInput, petNicknameInput, petPhysicalConditionDescriptionInput, petPersonalityDescriptionInput, petAgeInput;
+                        string? petSpeciesInput, petNicknameInput, petPhysicalConditionDescriptionInput, petPersonalityDescriptionInput, petAgeInput, petAdoptionSituationInput, petMedicalHistoryInput;
                         int petAgeNumber;
 
                         do
@@ -94,6 +94,18 @@
                             petPersonalityDescriptionInput = Console.ReadLine();
                         } while (string.IsNullOrWhiteSpace(petPersonalityDescriptionInput));
 
+                        do
+                        {
+                            Console.Write("Pet Adoption Situation (Yes | No): ");
+                            petAdoptionSituationInput = Console.ReadLine();
+                        } while (string.IsNullOrWhiteSpace(petAdoptionSituationInput));
+
+                        do
+                        {
+                            Console.Write("Pet Medical History: ");
+                            petMedicalHistoryInput = Console.ReadLine();
+                        } while (string.IsNullOrWhiteSpace(petMedicalHistoryInput));
+
                         int newPetId = (ourAnimals.Count > 0) ? ourAnimals[ourAnimals.Count - 1].petId + 1 : 1;
 
                         ourAnimals.Add(new Pets
@@ -103,7 +115,9 @@
                             petNickname = petNicknameInput,
                             petAge = petAgeNumber,
                             petPhysicalConditionDescription = petPhysicalConditionDescriptionInput,
-                            petPersonalityDescription = petPersonalityDescriptionInput
+                            petPersonalityDescription = petPersonalityDescriptionInput,
+                            petAdoptionSituation = petAdoptionSituationInput,
+                            petMedicalHistory = petMedicalHistoryInput
                         });
 
                         Console.WriteLine();
@@ -136,9 +150,8 @@
                         {
                             if (pet.petId == Convert.ToInt32(petDetailInput))
                             {
-                                Console.WriteLine($"Pet ID: {pet.petId}\nPet Species: {pet.petSpecies}\nPet Nickname: {pet.petNickname}\nPet Physical Condition Description: {pet.petPhysicalConditionDescription}\nPet Personality Description: {pet.petPersonalityDescription}");
+                                Console.WriteLine($"Pet ID: {pet.petId}\nPet Species: {pet.petSpecies}\nPet Nickname: {pet.petNickname}\nPet Physical Condition Description: {pet.petPhysicalConditionDescription}\nPet Personality Description: {pet.petPersonalityDescription} \nPet Adoption: {pet.petAdoptionSituation}\nPet Medical History: {pet.petMedicalHistory}");
                                 isTherePet = true;
-                                // \nPet Adoption: {pet.petAdoptionSituation}\nPet Medical History: {pet.petMedicalHistory}
                             }
                         }
                         if (!isTherePet) Console.WriteLine("No pet found!");
@@ -178,13 +191,21 @@
                             Console.Write($"Pet Personality Description({petToEdit.petPersonalityDescription}): ");
                             string newPetPersonalityDescription = Console.ReadLine();
 
+                            Console.Write($"Pet Personality Description({petToEdit.petAdoptionSituation}): ");
+                            string newPetAdoptionSituation = Console.ReadLine();
 
-                            if (!string.IsNullOrEmpty(newPetSpecies) || !string.IsNullOrEmpty(newPetName) || !string.IsNullOrEmpty(newPetAge) || !string.IsNullOrEmpty(newPetPhysicalCondition) || !string.IsNullOrEmpty(newPetPersonalityDescription))
+                            Console.Write($"Pet Personality Description({petToEdit.petMedicalHistory}): ");
+                            string newPetMedicalHistory = Console.ReadLine();
+
+                            if (!string.IsNullOrEmpty(newPetSpecies) || !string.IsNullOrEmpty(newPetName) || !string.IsNullOrEmpty(newPetAge) || !string.IsNullOrEmpty(newPetPhysicalCondition) || !string.IsNullOrEmpty(newPetPersonalityDescription) || !string.IsNullOrEmpty(newPetAdoptionSituation) || !string.IsNullOrEmpty(newPetMedicalHistory))
                             {
-                                petToEdit.petSpecies = newPetSpecies;
-                                petToEdit.petNickname = newPetName;
-                                petToEdit.petPhysicalConditionDescription = newPetPhysicalCondition;
-                                petToEdit.petPersonalityDescription = newPetPersonalityDescription;
+                                if (newPetSpecies != "") petToEdit.petSpecies = newPetSpecies;
+                                if (newPetName != "") petToEdit.petNickname = newPetName;
+                                if (newPetPhysicalCondition != "") petToEdit.petPhysicalConditionDescription = newPetPhysicalCondition;
+                                if (newPetPersonalityDescription != "") petToEdit.petPersonalityDescription = newPetPersonalityDescription;
+
+                                if (newPetAdoptionSituation != "") petToEdit.petAdoptionSituation = newPetAdoptionSituation;
+                                if (newPetMedicalHistory != "") petToEdit.petMedicalHistory = newPetMedicalHistory;
 
                                 if (isNumberAge)
                                 {
@@ -260,8 +281,8 @@
         public int petAge { get; set; }
         public string petPhysicalConditionDescription { get; set; }
         public string petPersonalityDescription { get; set; }
-        // public bool petAdoptionSituation { get; set; }
-        // public string petMedicalHistory { get; set; }
+        public string petAdoptionSituation { get; set; }
+        public string petMedicalHistory { get; set; }
 
     }
 
