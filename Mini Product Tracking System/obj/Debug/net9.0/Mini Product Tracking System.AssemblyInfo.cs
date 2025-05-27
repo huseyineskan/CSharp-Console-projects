@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mini Product Tracking System")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+456592fa65ff3afa526bdd04454f84ec45ce76cc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+adddedce7b3e9fc89ce2282a8fa81b41fa5564ea")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mini Product Tracking System")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mini Product Tracking System")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
