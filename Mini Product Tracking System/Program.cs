@@ -36,9 +36,9 @@ bool condition = true;
 List<Product> productList = new List<Product>();
 
 // TEST PRODUCT
-productList.Add(new Product { ProductName = "Notebook", ProducId = 1, });
-productList.Add(new Product { ProductName = "Mobile Phone", ProducId = 2, });
-productList.Add(new Product { ProductName = "Printer", ProducId = 3, });
+productList.Add(new Product { ProductName = "Notebook", ProducId = 1, ProductCategoryId = 1 });
+productList.Add(new Product { ProductName = "Mobile Phone", ProducId = 2, ProductCategoryId = 2 });
+productList.Add(new Product { ProductName = "Printer", ProducId = 3, ProductCategoryId = 21 });
 
 while (condition)
 {
@@ -96,10 +96,10 @@ while (condition)
                                     ListAllProducts();
                                     break;
                                 case 3:
-                                    Console.WriteLine("Ürün güncelleniyor...");
+                                    UpdateProduct();
                                     break;
                                 case 4:
-                                    Console.WriteLine("Ürün siliniyor...");
+                                    DeleteProduct();
                                     break;
                             }
                         } while (!isNumber);
@@ -122,26 +122,50 @@ while (condition)
 
 void ProductAdd()
 {
+    bool isNumber;
+    string productName;
+    int productCategory = 33;
+
     Console.WriteLine("You are adding a product:");
-    Console.Write("Product Name: ");
-    string productName = Console.ReadLine();
 
-    Console.Write("Category: ");
-    string productCategory = Console.ReadLine();
+    do
+    {
+        Console.Write("Product Name: ");
+        productName = Console.ReadLine();
+    } while (string.IsNullOrEmpty(productName));
+    do
+    {
+        Console.Write("Category: ");
+        isNumber = int.TryParse(Console.ReadLine(), out productCategory);
+    } while (!isNumber);
 
-    Product newProduct = new Product();
-    newProduct.ProductName = productName;
-    newProduct.CategoryId = int.Parse(productCategory);
+
+    Product newProduct = new Product
+    {
+        ProductName = productName,
+        ProductCategoryId = productCategory,
+    };
 
     productList.Add(newProduct);
 }
 
+void DeleteProduct()
+{
+    Console.WriteLine("You are deleting product:");
+}
+
+void UpdateProduct()
+{
+    Console.WriteLine("You are updating product:");
+}
+
 void ListAllProducts()
 {
-    Console.WriteLine("You are listing products:");
+    Console.WriteLine("You are listing products:\n");
+    Console.WriteLine("ID  CTG\tPRODUCT NAME");
     for (int i = 0; i < productList.Count; i++)
     {
-        Console.WriteLine($"{i + 1}.{productList[i].ProductName} - ({productList[i].ProducId})");
+        Console.WriteLine($"{i + 1}.  {productList[i].ProductCategoryId}\t{productList[i].ProductName}");
     }
     Console.WriteLine();
     Console.Write("<-Back");
@@ -158,7 +182,7 @@ class Product
 {
     public int ProducId { get; set; }
     public string ProductName { get; set; }
-    public int CategoryId { get; set; }
+    public int ProductCategoryId { get; set; }
 }
 
 class Category
