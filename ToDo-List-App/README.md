@@ -16,7 +16,7 @@ You can manage your daily tasks easily with this app.
 
 ---
 
-## 📋 Menu Example
+## 📋 Menu
 
 ```
 1.Add Task
