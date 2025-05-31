@@ -10,7 +10,6 @@ Projects I have completed on my journey to understand the basics of C#.
 - 🎮 [Fizz Buzz Console Game](https://github.com/huseyineskan/CSharp-projects/tree/main/Fizz-Buzz-Game)
 - ⚔️ [Hero vs Monster - Console Battle Game](https://github.com/huseyineskan/CSharp-projects/tree/main/Hero-Monster-Battle-Game)
 - 🐈 [Contoso Pets Application](https://github.com/huseyineskan/CSharp-projects/tree/main/Contoso-Pets-Application)
-- 📦 [Mini Product Tracking System](https://github.com/huseyineskan/CSharp-projects/tree/main/Mini%20Product%20Tracking%20System)
 
 ## 🚀 Getting Started
 
