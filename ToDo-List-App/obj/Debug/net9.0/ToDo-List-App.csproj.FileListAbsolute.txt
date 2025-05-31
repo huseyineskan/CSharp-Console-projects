@@ -1,0 +1,15 @@
+D:\CSharp-projects\ToDo-List-App\obj\Debug\net9.0\ToDo-List-App.GeneratedMSBuildEditorConfig.editorconfig
+D:\CSharp-projects\ToDo-List-App\obj\Debug\net9.0\ToDo-List-App.AssemblyInfoInputs.cache
+D:\CSharp-projects\ToDo-List-App\obj\Debug\net9.0\ToDo-List-App.AssemblyInfo.cs
+D:\CSharp-projects\ToDo-List-App\obj\Debug\net9.0\ToDo-List-App.csproj.CoreCompileInputs.cache
+D:\CSharp-projects\ToDo-List-App\obj\Debug\net9.0\ToDo-List-App.sourcelink.json
+D:\CSharp-projects\ToDo-List-App\bin\Debug\net9.0\ToDo-List-App.exe
+D:\CSharp-projects\ToDo-List-App\bin\Debug\net9.0\ToDo-List-App.deps.json
+D:\CSharp-projects\ToDo-List-App\bin\Debug\net9.0\ToDo-List-App.runtimeconfig.json
+D:\CSharp-projects\ToDo-List-App\bin\Debug\net9.0\ToDo-List-App.dll
+D:\CSharp-projects\ToDo-List-App\bin\Debug\net9.0\ToDo-List-App.pdb
+D:\CSharp-projects\ToDo-List-App\obj\Debug\net9.0\ToDo-List-App.dll
+D:\CSharp-projects\ToDo-List-App\obj\Debug\net9.0\refint\ToDo-List-App.dll
+D:\CSharp-projects\ToDo-List-App\obj\Debug\net9.0\ToDo-List-App.pdb
+D:\CSharp-projects\ToDo-List-App\obj\Debug\net9.0\ToDo-List-App.genruntimeconfig.cache
+D:\CSharp-projects\ToDo-List-App\obj\Debug\net9.0\ref\ToDo-List-App.dll
